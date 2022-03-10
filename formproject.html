@@ -1,0 +1,268 @@
+<html>
+<head>
+<style>
+body
+{
+background-image:url('https://wallpaperaccess.com/full/327141.jpg');
+background-size:100% 100%;
+margin-top:0px;
+}
+#card
+{
+font-size:22px;
+border:2px solid black;
+width:500px;
+margin:auto;
+border-radius:10px;
+background-color:lightblue;
+
+}
+table
+{
+font-size:17px;
+background-color:lightblue;
+}
+#last
+{
+background-color:#33CC33;
+border-radius:80px;
+color:white;
+padding:15px 32px;
+text-align:center;
+text-decoration:none;
+display:inline block;
+font-size:28px;
+margin:2px 2px;
+cursor:pointer;
+}
+table
+{
+
+border:groove black 2px;
+border-radius:10px;
+}
+input[type~=number]{
+border-radius:4px;
+border:none;
+}
+input[type~=email]{
+border-radius:4px;
+border:none;
+}
+input[type~=text]{
+border-radius:4px;
+border:none;
+
+}
+.text{
+border:none;
+border-radius:4px;
+}
+.area{
+border:none;
+border-radius:4px;
+}
+select{
+border:none;
+border-radius:4px;
+}
+
+</style>
+<script>
+function valid1()
+{
+
+
+if(document.f1.name.value=="")
+{
+alert("Enter Name");
+document.f1.name.focus();
+}
+else
+if(document.f1.number.value=="")
+{
+alert("Enter Mobile number");
+document.f1.number.focus();
+}	
+else
+if(document.f1.pincode.value=="")
+{
+alert("Enter pincode");
+document.f1.pincode.focus();
+}		
+else
+if(document.f1.road.value=="")
+{
+alert("Enter adress");
+document.f1.road.focus();
+}
+}
+function check()
+{
+
+if(isNaN(document.getElementById("number").value)==true)
+{
+alert("Only Numbers are valid !!!");
+
+
+
+}
+}
+function check1()
+{
+
+if(isNaN(document.getElementById("pincode").value)==true)
+{
+alert("Only Numbers are valid !!!");
+
+
+
+}
+}
+function show()
+{
+document.f1.t1.style.visibility="visible";
+
+}
+
+function hide()
+{
+document.f1.t1.style.visibility="hidden";
+}
+
+function myFunc1() 
+{
+document.getElementById("hi").innerHTML=
+"<table border=1><tr><td><b>Name on card</b><br><input type=text name=name></td><td><b>Card Number</b><br><input type=number name=num</td><td><b>Expiry Date</b><br><select><option>01</option><option>02</option><option>03</option><option>04</option><option>05</option><option>06</option><option>07</option><option>08</option><option>09</option><option>10</option><option>11</option><option>12</option></select>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<select><option>2020</option><option>2021</option><option>2023</option><option>2024</option><option>2025</option><option>2026</option><option>2027</option><option>2028</option><option>2029</option><option>2030</option><option>2031</option><option>2032</option><option>2032</option><option>2033</option><option>2034</option><option>2035</option><option>2036</option><option>2037</option><option>2038</option><option>2039</option><option>2040</option></select></td></tr></table>";
+}
+</script>
+</head>
+<body>
+
+
+<form name="f1">
+<div>
+<table  align=center>
+<tr>
+<td><b>Name:</b></td>
+
+<td><input type="text" name="name" id="name" placeholder="Enter your Name" required>
+</td>
+</tr>
+
+
+
+<tr>
+
+<td ><br><b>10-digit Mobile Number:</b></td>
+
+<td><br><input type="text" name="number" id="number" 
+placeholder="xxx-xxx-xxxx" maxlength="10" size="8"  onKeyUp="check()" required >
+<span id ="fetch"></span></td>
+</tr>
+
+
+<tr>
+<td ><br><b>Email-Id:</b></td>
+
+<td><br><input type="email" id="email"  name="email" size="30" placeholder="Enter email id">
+</td>
+</tr>
+<br>
+<tr>
+<td ><b>Pin Code:</b></td>
+
+<td ><input type="text" id="pincode" name="pincode" placeholder="type your pincode" onKeyUp="check1()" required>
+</td>
+</tr>
+
+
+<tr>
+<td ><br><b>House No/Building Name:</b></td>
+
+<td ><br><input type="text" id="address" name="address" placeholder="Enter your house no." required >
+</td>
+</tr>
+
+
+<tr>
+<td ><br><b>Road Name,Area,Colony:</b></td>
+<td ><br><textarea class="text"rows=3 cols=30 name=road></textarea required>
+
+</td>
+</tr>
+
+<br>
+<tr>
+<td ><br><b>Landmark</b>(optional)</td>
+
+<td ><br><textarea class="area" rows=3 cols=30></textarea>
+</td>
+</tr>
+
+<br>
+<tr>
+<td><br> <b>City</b>
+ <td ><br><input type="text" id="address" class="address" size="8" placeholder="city">&nbsp;&nbsp;&nbsp;&nbsp;
+
+ <b>State</b>
+<select>
+<option>Andhra Pradesh</option>
+<option>Arunachal Pradesh</option>
+<option>Assam</option>
+<option>Bihar</option>
+<option>Chandigarh</option>
+<option>Chhattisgarh</option>
+<option>Dadra and Nagar Haveli</option>
+<option>Daman and Diu</option>
+<option>Delhi</option>
+<option>Goa</option>
+<option>Gujarat</option>
+<option>Haryana</option>
+<option>Himachal Pradesh</option>
+<option>Jammu and Kashmir</option>
+<option>Jharkhand</option>
+<option>Karnataka</option>
+<option>Kerala</option>
+<option>Lakshadweep</option>
+<option>Madhya Pradesh</option>
+<option>Maharashtra</option>
+<option>Manipur</option>
+<option>Meghalaya</option>
+<option>Mizoram</option>
+<option>Nagaland</option>
+<option>Odisha</option>
+<option>Puducherry</option>
+<option>Punjab</option>
+<option>Rajasthan</option>
+<option>Sikkim</option>
+<option>Tamil Nadu</option>
+<option>Telangana</option>
+<option>Tripura</option>
+<option>Uttar Pradesh</option>
+<option>Uttarakhand</option>
+<option>West Bengal</option>
+</select>
+</tr>
+<br>
+<tr>
+<td ><br><b>Address type</b></td>
+<td><br><input type="radio" name="page" value="cash" ><b>HOME</b>
+<input type="radio" name="page" value ="card"><b>Work</b>
+</td></tr>
+</table>
+<br>
+<div id=card align=center>
+<b>PAYMENT OPTION</b>
+<p id="demo" align="center">
+<input type=radio name=r1><b>Cash</b>
+
+<input type=radio onclick="myFunc1()" name=r1> <b>Card</b></p>
+<p id="hi" align="center"></p>
+</div><br><br><br><br>
+<center ><input type=button id=last  onclick="valid1()" value="Confirm"></center>
+<center><a href="last.html"><input type=button id=last value="Place Order"</input></a></center>
+</div>
+</form>
+</body>
+</html>

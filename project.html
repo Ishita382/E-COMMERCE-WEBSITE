@@ -1,0 +1,469 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Online Shopping Site for mobiles,cloths,grocery,electronic,accessories and many more</title>
+
+<style>
+#a
+{
+	
+	border-sizing:border-box;
+	border:2px outset #ffec1a;
+	background-color:#ffec1a;
+	height:90px;
+	width:100%;
+	position:fixed;
+}
+#b
+{
+	border:2px outset #a6a6a6;
+	background-color:black;
+	height:60px;
+	width:100%;
+	position:fixed;
+	
+}
+#c
+{
+	
+}
+#d
+{
+	background-color:lightyellow;
+}
+#e{
+  background-color: black;
+  border:none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 18px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+#i
+{
+	border-radius:7px;
+
+	width:550px;
+	height:40px;
+}
+#q
+{
+	background-color:	 #ff3333 ;
+	border-radius:7px;
+	
+	width:50px;
+	height:40px;
+}
+a.c
+{
+	text-decoration:none;
+	
+}
+a.c:hover
+{
+	background-color:white;
+	color:red;
+}
+
+.mySlides fade
+{
+	display: none;
+}
+
+img 
+{
+	vertical-align: middle;
+}
+
+
+
+
+
+.slideshow-container
+{
+  max-width: 1100px;
+  margin: auto;
+}
+
+
+
+
+.numbertext 
+{
+  color: black;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+
+
+.numbertext
+{
+  color:black;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+
+
+
+.dot 
+{
+  height: 20px;
+  width: 20px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+ 
+}
+
+
+.active
+{
+  background-color:yellow;#717171;
+}
+
+
+
+
+.fade
+{
+ 
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes mySlides fade
+{
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@keyframes mySlides fade 
+{
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+
+
+
+@media only screen and (max-width: 300px)
+{
+  .text {font-size: 11px}
+}
+.main
+{
+	background-color:	 #e6e6e6;#ffffb3
+	
+}
+.end
+{
+	border:3px outset #f2f2f2;
+	background-color:	 #f2f2f2;
+	
+}
+.endd
+{
+	background-color: #d9d9d9;
+	border:3px outset #f2f2f2;
+}
+</style>
+
+</head>
+
+<body bgcolor="white">
+
+
+<div id="a"><br>
+&nbsp;&nbsp;&nbsp;&nbsp;<span style="font-family:fantasy;"><big><big><big><big><big>Online Emporium</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;<input id="i"  type="search">
+<a href="GO.html"><button id="q">GO</button></a>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span style=""><a class="c" href="Men's wear.html"><small><small><small>click on to see fresh arrivals</a></span>
+</div>
+<br><br><br>
+<div id="b">
+
+<a href="Electronics.html"><button id="e">Phones And Laptops</button></a><a href="TV's and appiances.html"><button id="e">TVs & Home Theatres</button></a><a href="Men's wear.html"><button id="e">Men Wear</button></a><a href="Women's wear.html"><button id="e">Womens Wear</button></a><a href="men footwear .html"><button id="e">Men Footwear</button></a><a href="women footwear.html"><button id="e">Women Footwear</button></a>
+
+</div>
+
+
+
+<!--   XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX  -->
+
+
+<div class="main">
+
+<br><br><br><br><br>
+<div class="slideshow-container">
+
+<div class="mySlides fade">
+ 
+  <img src="https://images.samsung.com/is/image/samsung/p5/in/offer/online/blue-fest/new-note20-bluefest-desktop.jpg?$ORIGIN_JPG$" style="width:100%">
+  
+</div>
+
+<div class="mySlides fade">
+  
+  <img src="slide4.png" style="width:100%">
+  
+</div>
+
+<div class="mySlides fade">
+  
+  <img src="slide3.png" style="width:100%">
+  
+</div>
+
+</div>
+<br>
+
+<div style="text-align:center">
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+</div>
+</div>
+<script>
+var slideIndex = 0;
+
+showSlides();
+
+function showSlides() 
+{
+
+  var i;
+  
+  var slides = document.getElementsByClassName("mySlides fade");
+  
+  var dots = document.getElementsByClassName("dot");
+  
+  for (i = 0; i < slides.length; i++) 
+  {
+    slides[i].style.display = "none";  
+  }
+  
+  slideIndex++;
+  
+  if (slideIndex > slides.length) 
+  {
+	slideIndex = 1
+  }    
+  for (i = 0; i < dots.length; i++) 
+  {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  
+  slides[slideIndex-1].style.display = "block";  
+  
+  dots[slideIndex-1].className += " active";
+  
+  setTimeout(showSlides, 2000); 
+}
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<h2 style="font-family: Helvetica, Arial, sans-serif";>Laptops and Desktop PC</h2>
+<hr>
+<div id="c">
+<h4 style="font-family: Helvetica, Arial, sans-serif";>click images to search for more options</h4>
+
+
+
+<a title="Click on image to see more deals on HP laptops" ><img src="https://in-media.apjonlinecdn.com/catalog/product/cache/c5b0e6136a6dd7f7d91d8b889ed40f35/1/V/1V4Q4PA-1_T1594604960.png" border=""></a>
+&nbsp;
+<a title="Click on image to see more deals on HP laptops" target="_blank" href="LAPTOP1.HTML"><img src="https://in-media.apjonlinecdn.com/catalog/product/cache/c5b0e6136a6dd7f7d91d8b889ed40f35/c/y/cyprus_front_white_1.png" border=""></a>
+&nbsp;
+<a title="Click on image to see more deals on HP laptops" ><img src="https://in-media.apjonlinecdn.com/catalog/product/cache/c5b0e6136a6dd7f7d91d8b889ed40f35/5/L/5LB09PA-1_T1540777104.png" border=""></a>
+
+<a title="Click on image to see more deals on HP laptops" target="_blank" href="LAPTOP2.HTML"><img src="https://rukminim1.flixcart.com/image/312/312/k9oj8280/computer/g/5/y/lenovo-legion-y540-15irh-gaming-laptop-original-imafrfafdwrgckq3.jpeg?q=70" border=""><br></a>
+</div>
+
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<big><b>HP ENVY Laptop-15-ep0123tx</b></big>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<big><b>HP Pavilion Gaming-15-dk0263tx</b></big>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<big><b>HP ZBook StudioG5 Workstation</b></big>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<big><b>Lenovo Legion Y540</b></big>
+</p>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<big><b><font color="red"><b>SOLD OUT</b></font></b></big>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+&nbsp;<big><b><font color="green"><b>AVAILABLE</b></font></b></big>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<big><b><font color="red"><b>SOLD OUT</b></font></b></big>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<big><b><font color="green"><b>AVAILABLE</b></font></b></big>
+</p>
+<br>
+<a title="Click on image to see more deals on SAMSUNG products" href="Electronics.html"><img src="https://images.samsung.com/is/image/samsung/p5/in/offer/online/blue-fest/new-note20-bluefest-desktop.jpg?$ORIGIN_JPG$" width="100%"></a>
+<br>
+<h2 style="font-family: Helvetica, Arial, sans-serif;">Best Selling Smart Phones</h2>
+<h5><b>Trending now</b></h5>
+<hr>
+<div id="d">
+<h4 style="font-family: Helvetica, Arial, sans-serif";>click images to search for more options</h4>
+
+
+<a href="Electronics.html" title=""><img src="https://rukminim1.flixcart.com/image/150/150/k8ddoy80/mobile/u/g/w/realme-narzo-10a-rmx2020-original-imafqechxsprgfgr.jpeg?q=70"></a>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<a href="Electronics.html" title=""><img src="https://rukminim1.flixcart.com/image/150/150/k8ddoy80/mobile/p/g/a/realme-narzo-10-rmx2040-original-imafqechhfbpwfzp.jpeg?q=70"></a>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<a href="Electronics.html" title=""><img src="https://rukminim1.flixcart.com/image/150/150/kae95e80/mobile/2/z/r/motorola-g8-power-lite-pajc0008in-original-imafrz85cmz2ycx8.jpeg?q=70"></a>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<a href="Electronics.html" title=""><img src="https://rukminim1.flixcart.com/image/150/150/k65d18w0/mobile/4/k/4/poco-x2-mzb9011in-original-imafzz2hbfkvftm5.jpeg?q=70"></a>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<a href="Electronics.html" title=""><img src="https://rukminim1.flixcart.com/image/150/150/k7dnonk0/mobile/x/3/n/realme-6-rbs0604in-original-imafpmftdkbsjnwn.jpeg?q=70"></a>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<a href="Electronics.html" title=""><img src="https://rukminim1.flixcart.com/image/150/150/kavefm80/mobile/6/y/t/samsung-galaxy-m11-sm-m115fzkeins-original-imafscjyhxwghgwf.jpeg?q=70"></a>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<a href="Electronics.html" title=""><img src="https://rukminim1.flixcart.com/image/150/150/k9loccw0/mobile/h/f/h/motorola-racer-turbo-edge-xt2061-3-original-imafrcvgpqx23mcq.jpeg?q=70"></a>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<a href="Electronics.html" title=""><img src="https://rukminim1.flixcart.com/image/150/150/kbi9h8w0/mobile/g/g/c/samsung-galaxy-a21s-sm-a217fzkfins-original-imafsuyajewgnfcg.jpeg?q=70"></a>
+
+<p><small><b>Realme Narzo 10A<b></small>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<small><b>Realme Narzo 10</b></small>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<small><b>Motorola G8 Power Liter</b></small>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;<small><b>POCO X2</b></small>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;<small><b>Realme 6</b></small>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;<small><b>Samsung Galaxy M11</b></small>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+&nbsp;<small><b>Motorola Edge+</b></small>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<small><b>Samsung Galaxy A21s</b></small>
+</p>
+
+
+</div>
+<br>
+
+<h2 style="font-family: Helvetica, Arial, sans-serif";>Men's Footwear</h2>
+<h3 style="background-color:green;color:white"><big>&nbsp;&nbsp;ARRIVING &nbsp;&nbsp;SOON</h3>
+<hr>
+<br>
+<table cellspacing="30px" width="100%" height="" border="0">
+
+<tr >
+<td align="center"><a href=""><img src="https://rukminim1.flixcart.com/image/522/626/k5msb680/shoe/a/y/z/dg-335-black-fashion-6-digitrendzz-black-original-imafnkzz2yrgkwcy.jpeg?q=50" width="300px" height="150px"></a>
+<br>Running Shoes For Men  (Black)</td>
+<td align="center"><a href=""><img src="https://rukminim1.flixcart.com/image/522/626/k3xcdjk0pkrrdj/shoe/y/4/e/8-dwane-idp-puma-shofhurjjamrvnfd-original-imafkdp2yzuxjpqr.jpeg?q=50" width="300px" height="150px"></a>
+<br>Dwane IDP Running Shoes For Men  (White)</td>
+<td align="center"><a href=""><img src="https://rukminim1.flixcart.com/image/522/626/k3xcdjk0pkrrdj/shoe/s/x/9/10-drogo-m-adidas-shofhwpcsbcj2dap-original-imafgzsycegjx2af.jpeg?q=50" width="300px" height="150px"></a>
+<br>ADIDAS Drogo M Running Shoe For Men  (Navy)</td>
+</tr>
+<tr>
+<td align="center"><a href=""><img src="https://rukminim1.flixcart.com/image/522/626/kd3f3bk0/shoe/n/6/z/cd0189-600-nike-university-red-white-black-original-imafu3fm8bhzsgfx.jpeg?q=50" width="300px" height="150px" ></a>
+<br>Basketball Shoes For Men  (Red)</td>
+<td align="center"><a href=""><img src="https://rukminim1.flixcart.com/image/522/626/kcjexe80/shoe/k/g/t/aj5902-005-nike-anthracite-black-canteen-original-imaftn3e2zr8qccc.jpeg?q=50" width="300px" height="150px"></a>
+<br>FLY.BY LOW II Basketball Shoes For Men  (Black)</td>
+<td align="center"><a href=""><img src="https://rukminim1.flixcart.com/image/522/626/jyeq64w0/shoe/b/u/a/hfi28-9-adidas-gresix-visgre-borang-original-imafgnnmzbgyjcex.jpeg?q=50" width="300px" height="150px"></a>
+<br>ADIDAS Puaro Ms Running Shoe For Men  (Grey)</td>
+</tr>
+<tr>
+<td align="center"><a href=""><img src="https://rukminim1.flixcart.com/image/522/626/k2dm7bk0/shoe/g/v/t/52751-10-skechers-blk-original-imafhrfymtfmmcqg.jpeg?q=50" width="300px" height="150px"></a>
+<br>FLEXADVANTAGE3.0 Running Shoes For Men  (Black)</td>
+<td align="center"><a href=""><img src="https://rukminim1.flixcart.com/image/522/626/k5o7r0w0/shoe/x/h/5/1071a019-10-asics-white-original-imafzavjyevrtjf5.jpeg?q=50" width="300px" height="150px"></a>
+<br>UPCOURT 3 Badminton Shoes For Men  (White)
+</td>
+<td align="center"><a href=""><img src="https://rukminim1.flixcart.com/image/522/626/jsc3ssw0/shoe/r/z/h/s709y-103-8-asics-103-original-imafdxz4rnfhbfzn.jpeg?q=50" width="300px" height="150px"></a>
+<br>Asics GEL-195TR (2E) SS 19 Running Shoes For Men  (White, Blue)</td>
+</tr>
+<tr>
+
+<td align="center"><a href=""><img src="https://rukminim1.flixcart.com/image/522/626/k8ndrww0/shoe/q/s/9/bf-026-8-big-fox-grey-original-imafqhzrbnktbexb.jpeg?q=50" width="300px" height="150px"></a>
+<br>BIG FOX Classic Suede Footwear Loafers For Men  (Grey)</td>
+<td align="center"><a href=""><img src="https://rukminim1.flixcart.com/image/522/626/jzd0qkw0/shoe/n/w/v/bf-026-10-big-fox-black-original-imafj5j8enk8n7wk.jpeg?q=50" width="300px" height="150px"></a>
+<br>BIG FOX Classic Suede Footwear Loafers For Men  (Black)</td>
+<td align="center"><a href=""><img src="https://rukminim1.flixcart.com/image/522/626/k47cgi80/shoe/8/7/t/10500-7-rontex-brown-original-imafmz3xtzapyzpe.jpeg?q=50" width="300px" height="150px"></a>
+<br>Bonexy Loafers For Men  (Brown)</td>
+</tr>
+
+<!--<tr>
+
+<td align="center"><a href=""><img src="https://rukminim1.flixcart.com/image/522/626/k47cgi80/shoe/g/8/4/10500-10-rontex-black-original-imafmz3xzhzgvkpp.jpeg?q=50" width="300px" height="150px"></a>
+<br>Rockfield Loafers For Men  (Black)</td>
+<td align="center"><a href=""><img src="https://rukminim1.flixcart.com/image/522/626/k2krekw0/slipper-flip-flop/t/n/t/ortho-diabetic-flip-flop-8-doctor-extra-soft-blue-original-imafkvycgpmk6mfg.jpeg?q=50" width="300px" height="150px"></a>
+<br>DOCTOR EXTRA SOFT</td>
+<td align="center"><a href=""><img src="https://rukminim1.flixcart.com/image/522/626/k1tm1e80/slipper-flip-flop/b/a/9/extrasoftbrown-12-doctor-extra-soft-brown-original-imafkhgg3mzwgz38.jpeg?q=50" width="300px" height="150px"></a>
+<br>DOCTOR EXTRA SOFT</td>
+</tr>-->
+
+</table>
+<br><br>
+<img height="300px" width="1250px" src="https://rukminim1.flixcart.com/flap/844/140/image/e6e3441bcb134bc3.jpg?q=50">
+<br><br>
+<hr>
+
+<div class="end">
+<pre>
+Top Stories:Brand Directory
+
+ MOST SEARCHED FOR ON ONLINE EMPORIUM:Super Fan ShowFake or Not ShowSnapchat SpectaclesRakhiSaree Axis Bank Credit CardHand Sanitizer
+ BOSS SaleRealme BandHuawei gt 2e Smart Watch5G MobilesEMPORIUM VideosEMPORIUM Pay LaterFlight BookingMi Air Purifier 2CiQOOO 3Studio Furniture
+ PurifiersVaporizerNebulizersHand WashPollution MasksA.P.J Abdul Kalam BooksRakesh Yadav BooksChetan Bhagat BooksAmrita  Pritam BooksHuawei Band
+ 4Realme 5i Realme Buds AirNokia 55 Inch TVRealme X2 PRONoise Colorfit Pro 2 SmartwatchUnicorn ToysRedmi 8Honor 20iOPPO K1Realme 5Realme 5 Pro
+ Axis Bank Credit CardRedmi K20Redmi K20 ProRealme 3iRealme XPhantom 9Redmi 7ARedmi Note 7S EarringsMens Watches3m MasksJewelleryWatchesGold 
+ CoinManga lsutran95 masksSunglassesMi SunglassesBackpacks MOBILES:Vivo Y91iVivo Y11Vivo Y15Vivo Y50Vivo Y12Reno2 FOppo A12Oppo F15Oppo A31Samsu
+ A71Samsung A51 Samsung A31Realme X2Realme 5Infinix Hot 8iPhone 11iPhone 11 ProiPhone 11 Pro MaxMobile Offersiphone xiphone 8iphone 7iphone 6Red
+ 5A4G MobileNokia MobileSamsung MobileiphoneOppo MobileVivo Mobile CAMERA:GoPro Action CameraNikon CameraCanon CameraSony CameraCanon DSLRNikon 
+ DSLR LAPTOPS:Microsoft Surface Go Pentium Gold 64GBMicrosoft Surface Go Pentium 128GBBranded LaptopsApple LaptopsAcer LaptopsLenovo LaptopsDell 
+ LaptopsAsus Laptops HP Laptops Gaming Laptops2 in 1 LaptopsBusiness Laptops TVS:MI 43 Inch 4K TVMI 40 Inch TVMi 65 Inch TVSamsung 32 Smart TVLG 
+ TVTV Sony TVSamsung TVMi 49 Inch Smart TVAndroid TelevisionIffalcon TvMi TV LARGE APPLIANCES:Voltas ACHitachi ACLloyd ACBlue Star AC Daikin ACLG
+ ACSamsung RefrigeratorsHaier RefrigeratorWhirlpool Refrigerator CLOTHING:Men ShirtsFashion Big Saving DaysMen T-ShirtsJeansRaincoatMen SuitsMen 
+ TrousersMens BlazersSareesDresses SkirtsDesigner Salwar SuitsBraDesigner KurtisMen KurtaGym WearParty DressesPalazzo SuitsGlovesNightyMaxi 
+ DressesAnarkaliIndo Western DressGowns CulottesSherwaniGirls ClothesSalwar SuitsTopsLehengaDress MaterialsKurtisDesigner SareesSummer Dresses
+ Designer BlousesKids ClothingBlouse DesignsBanarasi SareesSilk SareesCotton SareesShortsBlouseLong SkirtsPalazzoMini DressesNight SuitsBanarsi 
+ SuitInnerwearSports WearCapChanderi Sarees Linen SareesPaithani SareesPantiesBikiniPajamasDhoti KurtaManyavar KurtasJacketsWestern WearSleepwear
+ ClothingKids ClothingWinter WearEthnic Wear SweatshirtsHome Wear Dress FOOTWEAR:ShoesAdidas ShoesReebok ShoesNike ShoesPuma ShoesBootsBata Shoes
+ Woodland ShoesSkechers ShoesSneakersWomens Boots Sports ShoesLoafersSandalsCasual ShoesWomens Skechers ShoesFormal ShoesSchool Shoes GROCERIES:
+ PhonePe Grocery VoucherSugar Jaggery SaltsRiceMasala & SpicesDal PulsesAttaCookiesNoodlesGheeDry FruitsToor DalOlive OilSoapSunflower OilEggs
+ Toilet CleanerHarpic Toilet CleanerDettol SoapMustard OilBiscuit CheesePatanjali AttaFortune OilAashirvaad AttaButterAmul MilkJuicesTata Tea
+ Grocery StoreGrocery Essential StoreMuesliBreakfast CerealHand WashHand SanitizerLizol Floor CleanerDetergentsChipsTeaMilkChocolatesSoft Drinks
+ RavaCoffeeSugarColgate ToothpasteShampooAlmondsMoong Dal BEST SELLING ON ONLINE EMPORIUM :RakhiBooksToy StoreCandlesHelmetsWall ClocksBaby Food
+ ChocolatesCyclesCalculatorsLipsticksEid Jewellery Collection FURNITURE:FurnitureSofasBedsDining setsWardrobesMattressesTV UnitsTablesChairsShel
+ vesBean BagsRed SofaWhite SofaGreen SofaBlack SofaBrown Sofa
+
+
+</pre>
+</div>
+<hr>
+<div class="endd">
+<br>
+<CENTER><big>&copy </big>2015-2020 ONLNE EMPORIUM</CENTER>
+<br>
+</div>
+
+
+</body>
+</html>
